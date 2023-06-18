@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  box-sizing: border-box; /* add this */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+}

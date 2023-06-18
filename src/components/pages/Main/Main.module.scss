@@ -1,0 +1,57 @@
+@import "@/assets/styles/mixins.scss";
+
+.main {
+  padding-bottom: 290px;
+  &__bottom {
+    margin-top: 48px;
+  }
+  &__block {
+    max-width: 400px;
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+  &__content {
+    padding-top: 24px;
+  }
+  &__title {
+    @include create-font(20px, 600, 26px);
+    color: #333333;
+    margin-bottom: 8px;
+  }
+  &__list {
+    display: flex;
+    padding: 0;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+    &-icon {
+      margin-right: 4px;
+    }
+    &-link {
+      color: #5558fa;
+      text-decoration: none;
+    }
+  }
+  &__logo {
+    margin-right: 24px;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+    &-img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__header {
+    padding: 25px 0;
+    border-bottom: 1px solid #ebebeb;
+    display: flex;
+  }
+}

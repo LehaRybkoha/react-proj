@@ -1,0 +1,19 @@
+.step {
+  padding: 0 86px 88px 86px;
+  &__header {
+    padding: 40px 0;
+  }
+  &__form {
+    max-width: 300px;
+  }
+  &__block {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 110px;
+  }
+}

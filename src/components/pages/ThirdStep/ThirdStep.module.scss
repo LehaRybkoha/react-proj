@@ -1,0 +1,94 @@
+@import "@/assets/styles/mixins.scss";
+
+.step {
+  padding: 0 86px 88px 86px;
+  &__textarea {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.48);
+    @include create-font(14px, 400, 20px);
+    padding: 12px;
+    min-height: 85px;
+    resize: vertical;
+  }
+  &__header {
+    padding: 40px 0;
+  }
+  &__block {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+    &-title {
+      @include create-font(14px, 400, 20px);
+      margin: 0 0 8px 0;
+    }
+    &-advice {
+      @include create-font(12px, 400, 16px);
+      color: rgba(0, 0, 0, 0.48);
+    }
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 110px;
+  }
+  &__content {
+    margin-top: 60px;
+  }
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: none;
+  &__close {
+    display: none;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    cursor: pointer;
+  }
+  &--show {
+    display: flex;
+  }
+  &--error &__title {
+    width: 100%;
+  }
+  &--error &__button {
+    align-self: flex-end;
+  }
+  &--error &__close {
+    display: block;
+  }
+  &__content {
+    position: relative;
+    width: 100%;
+    max-width: 460px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__image {
+    margin-bottom: 50px;
+  }
+  &__title {
+    @include create-font(20px, 600, 26px);
+    color: #333333;
+    margin-bottom: 50px;
+    margin-top: 0;
+  }
+}

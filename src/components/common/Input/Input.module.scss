@@ -1,0 +1,29 @@
+@import "@/assets/styles/mixins.scss";
+
+.label {
+  width: 100%;
+  display: block;
+  &__text {
+    @include create-font(14px, 400, 20px);
+    margin-bottom: 8px;
+    color: #333333;
+  }
+  &__input {
+    background: rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+    padding: 12px;
+    width: 100%;
+    &--trans {
+      background: #ffffff;
+    }
+  }
+  &__advice {
+    @include create-font(12px, 400, 18px);
+    margin: 0;
+  }
+  &__error {
+    color: red;
+    margin: 8px 0 0 0;
+  }
+}

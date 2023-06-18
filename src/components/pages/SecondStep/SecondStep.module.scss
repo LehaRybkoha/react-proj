@@ -1,0 +1,68 @@
+@import "@/assets/styles/mixins.scss";
+
+.step {
+  padding: 0 86px 88px 86px;
+  &__header {
+    padding: 40px 0;
+  }
+  &__form {
+    max-width: 300px;
+  }
+  &__block {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+    &-title {
+      @include create-font(14px, 400, 20px);
+      margin: 0;
+    }
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 110px;
+  }
+  &__content {
+    margin-top: 60px;
+  }
+  &__advantage {
+    display: flex;
+    align-items: center;
+  }
+  &__advantages {
+    &-btn {
+      cursor: pointer;
+      margin-top: 8px;
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1.5px solid #5558fa;
+      border-radius: 4px;
+      background-color: #ffffff;
+    }
+  }
+  &__delete {
+    cursor: pointer;
+    margin-left: 16px;
+  }
+}
+
+.checkboxes {
+  &__block {
+    display: flex;
+    align-items: center;
+  }
+  &__name {
+    @include create-font(14px, 400, 14px);
+    color: #333333;
+    margin-left: 8px;
+  }
+  &__input {
+    border: 1.5px solid rgba(0, 0, 0, 0.24);
+    border-radius: 4px;
+    width: 16px;
+    height: 16px;
+  }
+}
