@@ -64,6 +64,8 @@ function ThirdStep(props: StepProps) {
     icon: errorModalIcon,
   }
 
+  const portalDiv = document.querySelector("body") as Element | DocumentFragment
+
   const [currentState, setCurrentState] = useState(errorState)
 
   const handleBack = () => {
@@ -195,7 +197,7 @@ function ThirdStep(props: StepProps) {
             </div>
           </div>
         </div>,
-        document.querySelector("body"),
+        portalDiv,
       )}
     </div>
   )

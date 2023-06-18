@@ -35,6 +35,8 @@ export const formDataSlice = createSlice({
   reducers: {
     changeData: (state, action: PayloadAction<object>) => {
       for (let key in action.payload) {
+        // @ts-ignore
+
         state[key] = action.payload[key]
       }
     },
