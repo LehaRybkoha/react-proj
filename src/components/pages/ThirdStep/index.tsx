@@ -73,7 +73,7 @@ function ThirdStep(props: StepProps) {
   }
 
   const textareaChange = (e: ChangeEvent<HTMLTextAreaElement>) => {
-    if (e.target.value.length < 200) {
+    if (e.target.value.length < 201) {
       setAbout(e.target.value)
     } else {
       setAbout(about)
@@ -153,6 +153,7 @@ function ThirdStep(props: StepProps) {
               className={styles.step__textarea}
             ></textarea>
             <p className={styles["step__block-advice"]}>Tip</p>
+            <p className={styles.step__count}>{about.length}</p>
           </div>
         </div>
         <div className={styles.step__bottom}>
