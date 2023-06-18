@@ -65,8 +65,8 @@ function MainPage() {
   }, [phone, email, dispatch])
 
   useEffect(() => {
-    setPhone(form.phone ?? "")
-    setEmail(form.email ?? "")
+    setPhone(form.phone?.length ? form.phone : "+79027035052")
+    setEmail(form.email?.length ? form.email : "emailforwork134@gmail.com")
   }, [])
 
   const list = [

@@ -13,3 +13,9 @@
   font-family: $font-family;
   text-transform: $text-transform;
 }
+
+@mixin md {
+  @media (max-width: 767px) {
+    @content;
+  }
+}

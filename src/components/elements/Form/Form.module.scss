@@ -1,3 +1,5 @@
+@import "@/assets/styles/mixins.scss";
+
 .form {
   background-color: #ffffff;
   max-width: 900px;
@@ -5,4 +7,7 @@
   margin: 0 auto;
   padding: 24px;
   border-radius: 12px 12px 0px 0px;
+  @include md {
+    max-width: 100%;
+  }
 }

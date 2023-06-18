@@ -1,6 +1,11 @@
+@import "@/assets/styles/mixins.scss";
+
 .app {
   background-color: #f4f4f5;
   min-height: 100vh;
   width: 100%;
   padding: 24px;
+  @include md {
+    padding: 0;
+  }
 }

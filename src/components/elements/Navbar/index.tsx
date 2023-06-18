@@ -15,7 +15,10 @@ function Navbar(props: NavbarInterface) {
     const currentNavbar = navbar.current as Element | null
     const width = currentNavbar?.getBoundingClientRect().width
     if (width) {
-      setLineWidth(`${(width / (props.steps.length - 1)) * (props.step - 1)}px`)
+      const calculatedWidthPx = ((width / (props.steps.length - 1)) *
+        (props.step - 1)) as number
+      const calculatedWidthPt = (calculatedWidthPx / width) * 100
+      setLineWidth(`${calculatedWidthPt}%`)
     }
   }, [props.step])
 

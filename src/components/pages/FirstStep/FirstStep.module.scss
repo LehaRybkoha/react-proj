@@ -1,5 +1,10 @@
+@import "@/assets/styles/mixins.scss";
+
 .step {
   padding: 0 86px 88px 86px;
+  @include md {
+    padding: 0;
+  }
   &__header {
     padding: 40px 0;
   }
